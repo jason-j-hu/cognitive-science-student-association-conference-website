@@ -1,1 +1,1 @@
-# cognitive-science-student-association-conference-website
+# Cognitive Science Student Association Conference Website
