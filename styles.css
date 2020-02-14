@@ -1,0 +1,55 @@
+*
+{
+    font-family: Avenir;
+    box-sizing: border-box;
+}
+body, html
+{
+    height: 100%;
+    margin: 0;
+}
+.bg-image
+{
+    background-image:  url('file:///Users/jasonhu/Desktop/CSSA%20Website/Wallpaper.png');
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+    position: center;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.fg-text-GeneralInfo
+{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    text-align: center;
+}
+
+
+h1
+{
+    color: blue;
+}
+
+h2
+{
+    color: brown;
+}
+
+p
+{
+    color: red;
+}
