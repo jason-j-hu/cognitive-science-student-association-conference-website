@@ -1,30 +1,51 @@
-*
-{
-    font-family: Avenir;
-    box-sizing: border-box;
-}
 body, html
 {
     height: 100%;
     margin: 0;
+    font-family: Avenir;
+    overflow:hidden;
 }
+
 .bg-image
 {
-    background-image:  url('file:///Users/jasonhu/Desktop/CSSA%20Website/Wallpaper.png');
+    background-image: url("file:///Users/jasonhu/Desktop/cogsci-conference-2020/Wallpaper.png");
 
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    height: 100%; 
 
-    /* Full height */
-    height: 100%;
-    position: center;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
 }
+
+.topnav
+{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a
+{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
 .fg-text-GeneralInfo
 {
     color: white;
@@ -37,7 +58,6 @@ body, html
     width: 80%;
     text-align: center;
 }
-
 
 h1
 {
