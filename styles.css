@@ -1,75 +1,123 @@
-body, html
+*, *:before, *:after
 {
-    height: 100%;
-    margin: 0;
-    font-family: Avenir;
-    overflow:hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.bg-image
+html, body
 {
-    background-image: url("file:///Users/jasonhu/Desktop/cogsci-conference-2020/Wallpaper.png");
-
-    height: 100%; 
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
 }
 
-.topnav
+div
 {
-    overflow: hidden;
-    background-color: #333;
+  display: block;
 }
 
-.topnav a
-{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.app {
+    background: linear-gradient(180deg, #423C7B 2.02%, #61497E 53.58%, #6A5386 68.31%);
+}
+nav, .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 84px;
+    width: 100%;
+    background-color: #222832;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.125s cubic-bezier(0.4, 0, 0.2, 1) transform,0.5s cubic-bezier(0.4, 0, 0.2, 1) background-color,0.5s cubic-bezier(0.4, 0, 0.2, 1) box-shadow;
+    font-family: "Sofia Pro",sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 0.75rem;
+    padding: 0 0.7vh;
+    z-index: 64;
 }
 
-.topnav a:hover
-{
-    background-color: #ddd;
-    color: black;
+nav.top,
+.nav.top {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
 }
 
-.topnav a.active
-{
-    background-color: #4CAF50;
-    color: white;
+nav > .nav-container,
+.nav > .nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+nav.sidebar > .nav-container,
+.nav.sidebar > .nav-container {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
-.fg-text-GeneralInfo
-{
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    text-align: center;
+nav > .nav-container > .container,
+.nav > .nav-container > .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
 }
 
-h1
-{
-    color: blue;
+
+nav.sidebar > .nav-container > .container,
+.nav.sidebar > .nav-container > .container {
+  flex-direction: column;
+  height: unset;
+  min-height: 100%;
+  width: 100%;
 }
 
-h2
-{
-    color: brown;
+
+nav > .nav-container > .container > .element,
+.nav > .nav-container > .container > .element {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  max-width: 100%;
+  height: 100%;
 }
 
-p
-{
-    color: red;
+
+nav.sidebar > .nav-container > .container > .element,
+.nav.sidebar > .nav-container > .container > .element {
+  flex-direction: column;
+  margin: 0;
+  height: unset;
+  width: 100%;
 }
+
+
+.hack_logos img {
+    width: 3vmax;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
