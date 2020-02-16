@@ -1,123 +1,141 @@
-*, *:before, *:after
-{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* <WHOLE WEBSITE CSS CODE> */
 
-html, body
+/*This is for the whole body of the website*/
+body, html
 {
   margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
+  font-family: 'Futura', sans serif;
+  color: azure;
+  font-weight: 400;
+  background-image: linear-gradient(180deg, #082a32 30%, #6A9BA3 60%, #c2d0d8 90%);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
-div
+/*add whitespace on sides*/
+.container
 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* <HEADER SECTION CSS CODE> */
+
+/* overall header color*/
+header
+{
+  background: #082a32;
+}
+
+/* makes sure that all the text & images inside the header is covered by the header color*/
+header::after
+{
+  content: '';
+  display: table;
+  clear:both;
+}
+
+/* header navbar logo settings */
+header #header-logo
+{
+  float: left;
+  padding: 10px 0;
+}
+
+/* header navbar text settings */
+header nav
+{
+  float:right;
+}
+
+/* header navbar text layout */
+header nav ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* header navbar text layout */
+header nav li
+{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  position: relative;
+}
+
+/* header navbar text font formatting */
+header nav a
+{
+  color: #F0FFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* header navbar text color hover mechanic */
+header nav a:hover
+{
+  color: white;
+}
+
+/* header navbar interactive line settings */
+header nav a::before
+{
+  content: '';
   display: block;
-}
-
-.app {
-    background: linear-gradient(180deg, #423C7B 2.02%, #61497E 53.58%, #6A5386 68.31%);
-}
-nav, .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 84px;
-    width: 100%;
-    background-color: #222832;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.125s cubic-bezier(0.4, 0, 0.2, 1) transform,0.5s cubic-bezier(0.4, 0, 0.2, 1) background-color,0.5s cubic-bezier(0.4, 0, 0.2, 1) box-shadow;
-    font-family: "Sofia Pro",sans-serif;
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 0.75rem;
-    padding: 0 0.7vh;
-    z-index: 64;
-}
-
-nav.top,
-.nav.top {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none;
-}
-
-nav > .nav-container,
-.nav > .nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 5px;
   width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-  overflow-x: auto;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
 }
 
-nav.sidebar > .nav-container,
-.nav.sidebar > .nav-container {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-
-nav > .nav-container > .container,
-.nav > .nav-container > .container {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  white-space: nowrap;
-}
-
-
-nav.sidebar > .nav-container > .container,
-.nav.sidebar > .nav-container > .container {
-  flex-direction: column;
-  height: unset;
-  min-height: 100%;
+/* header navbar interative line hover mechanic */
+header nav a:hover::before
+{
   width: 100%;
 }
 
+/* <MAIN SECTION CSS CODE> */
 
-nav > .nav-container > .container > .element,
-.nav > .nav-container > .container > .element {
-  display: flex;
-  align-items: center;
-  margin: 0 8px;
-  max-width: 100%;
-  height: 100%;
+/* [Section 1] */
+
+main .logo
+{
+  margin-top: 50px;
 }
 
-
-nav.sidebar > .nav-container > .container > .element,
-.nav.sidebar > .nav-container > .container > .element {
-  flex-direction: column;
-  margin: 0;
-  height: unset;
-  width: 100%;
+main #front-pg-logo
+{
+  height: 450px;
+  float:right;
 }
 
+main #front-pg-text
+{
+  font-family:'Krungthep';
+  color:MintCream;
+  font-size: 65px;
+  letter-spacing: 5px;
+}
 
-.hack_logos img {
-    width: 3vmax;
-  }
+main #front-pg-text span
+{
+  font-family: 'Futura';
+  color:MintCream;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+main p
+{
+  color:MintCream;
+  text-align: center;
+  float:left;
+}
