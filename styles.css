@@ -5,12 +5,16 @@ body, html
 {
   margin: 0;
   font-family: 'Futura', sans serif;
-  color: azure;
+  color: mintcream;
   font-weight: 400;
-  background-image: linear-gradient(180deg, #082a32 30%, #6A9BA3 60%, #c2d0d8 90%);
+  background-image: url(file:///Users/jasonhu/Desktop/cogsci-conference-2020/background.png), linear-gradient(180deg, #082a32 30%, #6A9BA3 60%, #c2d0d8 90%);
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-size: 100%;
+  
 }
+
+
 
 /*add whitespace on sides*/
 .container
@@ -24,7 +28,7 @@ body, html
 /* overall header color*/
 header
 {
-  background: #082a32;
+  background: black;
 }
 
 /* makes sure that all the text & images inside the header is covered by the header color*/
@@ -87,7 +91,7 @@ header nav a::before
   display: block;
   height: 5px;
   width: 100%;
-  background-color: #444;
+  background-color: white;
 
   position: absolute;
   top: 0;
@@ -108,34 +112,42 @@ header nav a:hover::before
 
 main .logo
 {
-  margin-top: 50px;
+  position:relative;
+  text-align: right;
+  margin-right: 35%;
+  padding-top: 6vw;
 }
 
-main #front-pg-logo
+/* main #front-pg-logo
 {
   height: 450px;
   float:right;
-}
+}*/
 
-main #front-pg-text
+main .front-pg-text #title
 {
   font-family:'Krungthep';
-  color:MintCream;
-  font-size: 65px;
+  font-size: 4.5vw;
   letter-spacing: 5px;
 }
 
-main #front-pg-text span
+
+main .front-pg-text span
 {
   font-family: 'Futura';
-  color:MintCream;
-  font-size: 45px;
-  letter-spacing: 5px;
+  font-size: 2.5vw;
 }
 
-main p
+main .front-pg-text #tag-1
 {
-  color:MintCream;
-  text-align: center;
-  float:left;
+  font-family: 'Rubik', sans-serif;
+  font-weight:400;
+  font-size: 2.5vw;
+}
+
+main .front-pg-text #tag-2
+{
+  font-family:'Montserrat', sans-serif;
+  font-weight:300;
+  font-size: 1.5vw;
 }
