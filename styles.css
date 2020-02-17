@@ -7,13 +7,12 @@ body, html
   font-family: 'Futura', sans serif;
   color: mintcream;
   font-weight: 400;
-  background-image: url(file:///Users/jasonhu/Desktop/cogsci-conference-2020/background.png), linear-gradient(180deg,black 20%, #082a32 50%, #6A9BA3 60%, #c2d0d8 90%);
+  background-image: linear-gradient(180deg,black 0%, #082a32 50%, #6A9BA3 60%, #c2d0d8 90%);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
   
 }
-
 
 
 /*add whitespace on sides*/
@@ -29,6 +28,10 @@ body, html
 header
 {
   background: black;
+  position: fixed;
+  top: 0;
+  z-index: 9999999999;
+  width: 100%;
 }
 
 /* makes sure that all the text & images inside the header is covered by the header color*/
@@ -108,21 +111,26 @@ header nav a:hover::before
 
 /* <MAIN SECTION CSS CODE> */
 
-/* [Section 1] */
+/* [Section 1 - logo] */
 
 main .logo
 {
-  position:relative;
+  
   text-align: right;
   margin-right: 35%;
-  padding-top: 5vw;
+  position: absolute;
+  z-index: 999;
+  top: 130px;
 }
 
-/* main #front-pg-logo
+main #front-pg-logo
 {
-  height: 450px;
-  float:right;
-}*/
+  position:relative;
+  display: inline-block;
+  width:100%;
+  line-height: 0;
+  display: block;
+}
 
 main .front-pg-text #title
 {
@@ -135,7 +143,7 @@ main .front-pg-text #title
 main .front-pg-text span
 {
   font-family: 'Futura';
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 main .front-pg-text #tag-1
@@ -150,4 +158,129 @@ main .front-pg-text #tag-2
   font-family:'Montserrat', sans-serif;
   font-weight:300;
   font-size: 1.5vw;
+}
+
+/* [Section 2 - about] */
+
+.about
+{
+  background:rgba(0, 0, 0, 0.2);
+  margin: 70px auto 0;
+  display: flex;
+  padding: 10px 50px 10px 50px;
+  border-radius: 25px;
+
+  
+  
+  /*
+  margin: 0 -9999rem;
+  /* add back negative margin value
+  padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);*/
+}
+
+.about .alignleft
+{
+  position: relative;
+  float: left;
+  width:30%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .alignright
+{
+  float: left;
+  text-align:left;
+  width:70%;
+  overflow: auto;
+}
+
+/* [Section 3 - speakers] */
+.speakers
+{
+  background:rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-top: 50px;
+  padding-top: 5px;
+}
+
+.speakers h1
+{
+  text-align: center;
+}
+
+.speakers .wrapper
+{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+.speakers .wrapper .box
+{
+  position: relative;
+  
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 25px;
+  
+
+}
+
+.speakers .wrapper .box .portrait-box
+{
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+
+.speakers .wrapper .box .portrait-box img
+{
+  max-width:100%;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+.speakers .wrapper .box:hover .portrait-box img
+{
+  transform: scale(1.1);
+  filter: grayscale(100%) brightness(50%);
+  border-radius: 25px;
+}
+
+.speakers .wrapper .box .description
+{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background:rgba(0, 0, 0, 0.6);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+  border-radius: 25px;
+}
+.speakers .wrapper .box:hover .description
+{
+  transform:scaleY(1);
+}
+
+.speakers .wrapper .box .description .content
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+  padding: 15px;
+  color: mintcream;
 }
