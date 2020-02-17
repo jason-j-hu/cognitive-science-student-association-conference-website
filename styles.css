@@ -7,7 +7,7 @@ body, html
   font-family: 'Futura', sans serif;
   color: mintcream;
   font-weight: 400;
-  background-image: url(file:///Users/jasonhu/Desktop/cogsci-conference-2020/background.png), linear-gradient(180deg, #082a32 30%, #6A9BA3 60%, #c2d0d8 90%);
+  background-image: url(file:///Users/jasonhu/Desktop/cogsci-conference-2020/background.png), linear-gradient(180deg,black 20%, #082a32 50%, #6A9BA3 60%, #c2d0d8 90%);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
@@ -115,7 +115,7 @@ main .logo
   position:relative;
   text-align: right;
   margin-right: 35%;
-  padding-top: 6vw;
+  padding-top: 5vw;
 }
 
 /* main #front-pg-logo
