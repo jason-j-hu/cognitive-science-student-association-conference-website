@@ -341,3 +341,110 @@ main .front-pg-text #tag-2
   color: #009879
 
 }
+
+
+
+/* [Section 5 - faq] */
+
+.faq
+{
+  margin-top: 50px;
+  padding-top: 5px;
+}
+
+.faq h1
+{
+  text-align: center;
+}
+
+.accordion {
+  background-color: brown;
+  color: yellow;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: pink;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: green;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: purple;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* [Section 6 - sponsors] */
+
+.sponsors
+{
+  border-radius: 25px;
+  margin-top: 50px;
+  padding-top: 5px;
+}
+
+.sponsors h1
+{
+  text-align: center;
+}
+
+.sponsors .wrapper
+{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+.sponsors .wrapper .box
+{
+  position: relative;
+  
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 25px;
+  
+
+}
+
+.sponsors .wrapper .box .sponsor-logo
+{
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+
+.sponsors .wrapper .box .sponsor-logo img
+{
+  max-width:100%;
+  border-radius: 25px;
+}
