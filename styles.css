@@ -11,9 +11,10 @@ body, html
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
   
 }
-
 
 /*add whitespace on sides*/
 .container
@@ -253,8 +254,7 @@ main .front-pg-text #tag-2
 
 .speakers .wrapper .box:hover .portrait-box img
 {
-  transform: scale(1.1);
-  filter: grayscale(100%) brightness(50%) blur(5px);
+  filter: grayscale(100%) brightness(50%);
   border-radius: 25px;
 }
 
@@ -285,4 +285,59 @@ main .front-pg-text #tag-2
   color: mintcream;
 }
 
-/* [Section 4 - events] */
+/* [Section 4 - event schedule] */
+
+.schedule
+{
+  margin-top: 50px;
+  padding-top: 5px;
+}
+
+.schedule h1
+{
+  text-align: center;
+}
+
+.speaker-panelist-schedule
+{
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%
+}
+
+.speaker-panelist-schedule thead tr
+{
+  background-color: #009879;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.speaker-panelist-schedule th, .speaker-panelist-schedule td
+{
+  padding: 12px 15px;
+}
+
+.speaker-panelist-schedule tbody tr
+{
+  border-bottom: 1px solid white;
+  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.speaker-panelist-schedule tbody tr:nth-of-type(even)
+{
+  background-color: darkgray;
+}
+.speaker-panelist-schedule tbody tr:last-of-type
+{
+  border-bottom: 2px solid #009879;
+}
+
+.speaker-panelist-schedule tbody tr:hover{
+  font-weight: bold;
+  color: #009879
+
+}
