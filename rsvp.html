@@ -7,139 +7,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RSVP</title>
     <link rel="stylesheet" href="rsvpstyles.css">
+
 </head>
 
 
 <body>
     <header>
+        <div class = "container">
+            <img id = "header-logo" width="48" height="48" src="file:///Users/jasonhu/Desktop/cogsci-conference-2020/cssa-logo.png">
 
-
+            <nav>
+                <ul>
+                    <li><a href = "file:///Users/jasonhu/Desktop/cogsci-conference-2020/index.html">Back to Main Page</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <div class = "container">
+            <h1 id = section-rows>RSVP Form</h1>
+            <form action="contactform.php" method="GET">
+                <table>
+                    <col style="width: 60%">
+                    <col style="width: 40%">
+                    <tbody>
+                        <tr class = "section-row-bottom section-row-top">
+                            <td class = "heading"><label for="user-name">Full Name: </label></td>
+                            <td class = "response"><input type="text" class = "text" name="name" id="user-name" placeholder="Full Name"></td>
+                        </tr>
 
-        <form action="contactform.php" method="GET">
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="user-name">Full Name: </label></td>
-                        <td><input type="text" name="name" id="user-name" placeholder="Full Name"></td>
-                    </tr>
+                        <tr class = "section-row-bottom">
+                            <td class = "heading"><label for="user-email">Email: </label></td>
+                            <td class = "response"><input class = "text" type="text" name="email" id="user-email" placeholder="Email"></td>
+                        </tr>
 
-                    <tr>
-                        <td><label for="user-email">Email: </label></td>
-                        <td><input type="text" name="email" id="user-email" placeholder="Email"></td>
-                    </tr>
+                        <tr class = "section-row-bottom">
+                            <td class = "heading">Expected Time Present</td>
+                            <td class = "response">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="full-duration" id="full-duration">
+                                            <label for="full-duration">Full Duration</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="10-11AM" id="10-11AM">
+                                            <label for="10-11AM">10&#8212;11AM</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="11-12PM" id="11-12PM">
+                                            <label for="11-12PM">11&#8212;12PM</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="12-1PM" id="12-1PM">
+                                            <label for="12-1PM">12&#8212;1PM</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="1-2PM" id="1-2PM">
+                                            <label for="1-2PM">1&#8212;2PM</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="2-3PM" id="2-3PM">
+                                            <label for="2-3PM">2&#8212;3PM</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="3-4PM" id="3-4PM">
+                                            <label for="3-4PM">3&#8212;4PM</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="4-4:30PM" id="4-4:30PM">
+                                            <label for="4-4:30PM">4&#8212;4:30PM</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Expected Time Present</td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="full-duration" id="full-duration">
-                                        <label for="full-duration">Full Duration</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="10-11AM" id="10-11AM">
-                                        <label for="10-11AM">10&#8212;11AM</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="11-12PM" id="11-12PM">
-                                        <label for="11-12PM">11&#8212;12PM</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="12-1PM" id="12-1PM">
-                                        <label for="12-1PM">12&#8212;1PM</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="1-2PM" id="1-2PM">
-                                        <label for="1-2PM">1&#8212;2PM</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="2-3PM" id="2-3PM">
-                                        <label for="2-3PM">2&#8212;3PM</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="3-4PM" id="3-4PM">
-                                        <label for="3-4PM">3&#8212;4PM</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="4-4:30PM" id="4-4:30PM">
-                                        <label for="4-4:30PM">4&#8212;4:30PM</label>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+                        <tr class = "section-row-bottom">
+                            <td class = "heading">How Did You Hear About This Event?</td>
+                            <td  class = "response">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="facebook" id = "facebook">
+                                            <label for="facebook">Facebook</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="friend" id = "friend">
+                                            <label for="friend">Friend</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="email" id = "email">
+                                            <label for="email">Email</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="flyer" id = "flyer">
+                                            <label for="flyer">Flyer</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="website" id = "website">
+                                            <label for="website">Website</label>
+                                        </td>
+                                    </tr>
+                                    <tr><td><input type="text" name="other" placeholder="Other"></td></tr>
+                                </table>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>How Did You Hear About This Event?</td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="facebook" id = "facebook">
-                                        <label for="facebook">Facebook</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="friend" id = "friend">
-                                        <label for="friend">Friend</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="email" id = "email">
-                                        <label for="email">Email</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="flyer" id = "flyer">
-                                        <label for="flyer">Flyer</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" name="website" id = "website">
-                                        <label for="website">Website</label>
-                                    </td>
-                                </tr>
-                                <tr><td><input type="text" name="other" placeholder="Other"></td></tr>
-                            </table>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td colspan="2" class = "response"><input class = "text" type="submit" name="submit"></td>
+                        </tr>
+                    </tbody>
 
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" name="submit"></td>
-                    </tr>
-                </tbody>
+                </table>
 
-
-
-            </table>
-
-
-        </form>
-
+            </form>
+        </div>
     </main>
+    
 </body>
 
 </html>

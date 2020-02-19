@@ -25,6 +25,34 @@ body, html
 
 /* <HEADER SECTION CSS CODE> */
 
+header button, body .logo button{
+  padding: 5px 10px;
+  background-color: mintcream;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  font-family: 'Futura', sans serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#nav-button
+{
+  padding: 5px 2em;
+}
+
+#long-button
+{
+  padding: 5px 3em;
+}
+
+button:hover
+{
+  background-color: white;
+}
+
 /* overall header color*/
 header
 {
@@ -109,6 +137,8 @@ header nav a:hover::before
 {
   width: 100%;
 }
+
+
 
 /* <MAIN SECTION CSS CODE> */
 
@@ -324,7 +354,7 @@ main .front-pg-text #tag-2
 .speaker-panelist-schedule tbody tr
 {
   border-bottom: 1px solid white;
-  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .speaker-panelist-schedule tbody tr:nth-of-type(even)
@@ -337,12 +367,8 @@ main .front-pg-text #tag-2
 }
 
 .speaker-panelist-schedule tbody tr:hover{
-  font-weight: bold;
   color: #009879
-
 }
-
-
 
 /* [Section 5 - faq] */
 
