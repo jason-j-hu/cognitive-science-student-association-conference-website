@@ -2,7 +2,14 @@ const other = document.getElementById('other')
 
 
 var firebaseConfig = {
-  
+  apiKey: "AIzaSyDc-BgdXaVG5tmOZZqdOPtBM7v5OJqFO9U",
+  authDomain: "cog-sci-conference-2020.firebaseapp.com",
+  databaseURL: "https://cog-sci-conference-2020.firebaseio.com",
+  projectId: "cog-sci-conference-2020",
+  storageBucket: "cog-sci-conference-2020.appspot.com",
+  messagingSenderId: "775433633219",
+  appId: "1:775433633219:web:e59cf1028f20db3e0e1176",
+  measurementId: "G-WJ44J2ZQVY"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
