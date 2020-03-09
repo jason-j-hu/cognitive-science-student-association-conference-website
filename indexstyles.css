@@ -138,6 +138,84 @@ header nav a:hover::before
   width: 100%;
 }
 
+.dropdown
+{
+  color: #fff;
+  float: right;
+  line-height: 70px;
+  font-size:24px;
+  cursor: pointer;
+  display:none;
+}
+
+@media (max-width: 920px)
+{
+  header
+  {
+    padding: 0 20px;
+  }
+  .dropdown
+  {
+    display:block;
+  }
+  header nav
+  {
+    display: none;
+  }
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 12px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 12.5%;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: left;
+  color: black;
+  padding: 0px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 /* <MAIN SECTION CSS CODE> */
@@ -161,6 +239,7 @@ main #front-pg-logo
   width:100%;
   line-height: 0;
   display: block;
+  top: 30px;
 }
 
 main .front-pg-text #title

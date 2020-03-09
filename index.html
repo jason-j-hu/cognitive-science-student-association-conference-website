@@ -7,6 +7,21 @@
         <link rel = "stylesheet" href = "indexstyles.css">
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxanium:400,600&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"-->
+        <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159047766-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159047766-1');
+        </script>
 
     </head>
 
@@ -15,16 +30,39 @@
             <div class = "container">
                 <img id = "header-logo" width="48" height="48" src="cssa-logo.png">
 
-                <nav>
+                <nav class = "activenavbar">
                     <ul>
-                        <li><a href = "#about">About</a></li>
-                        <li><a href = "#speakers">Speakers & Panelists</a></li>
-                        <li><a href = "#schedule">Schedule</a></li>
-                        <li><a href = "#faq">FAQ</a></li>
-                        <li><a href = "#sponsors">Sponsors</a></li>
-                        <li><a href = "rsvp.html"><button id = nav-button>RSVP</button></a></li>
+                        <li><a href = "#about" class = "navbartxt">About</a></li>
+                        <li ><a href = "#speakers" class = "navbartxt">Speakers</a></li>
+                        <li><a href = "#schedule" class = "navbartxt">Schedule</a></li>
+                        <li><a href = "#faq" class = "navbartxt">FAQ</a></li>
+                        <li><a href = "rsvp.html" class = "navbartxt"><button id = nav-button>RSVP</button></a></li>
                     </ul>
                 </nav>
+
+                <div class = "dropdown">
+                    <div>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+
+
+                    <div class="dropdown-content">
+
+                        <a href = "#about" class = "navbartxt">About</a>
+                        <a href = "#speakers" class = "navbartxt">Speakers</a>
+                        <a href = "#schedule" class = "navbartxt">Schedule</a>
+                        <a href = "#faq" class = "navbartxt">FAQ</a>
+                        <a href = "rsvp.html" class = "navbartxt"><button id = nav-button>RSVP</button></a>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
             </div>
         </header>
         
@@ -66,7 +104,7 @@
                             </div>
                             <div class = "description">
                                 <div class = "content">
-                                    <h2>Person 1</h2>
+                                    <h2>Jason Moore</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
@@ -78,7 +116,7 @@
                             </div>
                             <div class = "description">
                                 <div class = "content">
-                                    <h2>Person 2</h2>
+                                    <h2>Tobias Quessier</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
@@ -90,7 +128,7 @@
                             </div>
                             <div class = "description">
                                 <div class = "content">
-                                    <h2>Person 3</h2>
+                                    <h2>Melissa Aczon</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
@@ -101,7 +139,7 @@
                             </div>
                             <div class = "description">
                                 <div class = "content">
-                                    <h2>Person 4</h2>
+                                    <h2>Hongjing Lu</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
@@ -112,7 +150,7 @@
                             </div>
                             <div class = "description">
                                 <div class = "content">
-                                    <h2>Person 5</h2>
+                                    <h2>Siddharth Pandiya</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
@@ -123,7 +161,7 @@
                             </div>
                             <div class = "description">
                                 <div class = "content">
-                                    <h2>Person 6</h2>
+                                    <h2>Aaron Hui</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
@@ -155,63 +193,69 @@
                         
                         <tbody>
                             <tr>
-                                <td>Activity One</td>
-                                <td>10:00AM</td>
+                                <td>Check In & Registration</td>
                                 <td>10:30AM</td>
+                                <td>11:00AM</td>
                             </tr>
                             <tr>
-                                <td>Activity Two</td>
+                                <td>Opening Remarks</td>
+                                <td>11:00AM</td>
+                                <td>11:15AM</td>
+                            </tr>
+                            <tr>
+                                <td>Jason Moore: INSERT TITLE HERE</td>
+                                <td>11:15AM</td>
                                 <td>12:00PM</td>
-                                <td>1:00PM</td>
                             </tr>
                             <tr>
-                                <td>Activity Three</td>
+                                <td>Tobias Quessier: INSERT TITLE HERE</td>
+                                <td>12:00PM</td>
+                                <td>12:40PM</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch & Networking</td>
+                                <td>12:40PM</td>
+                                <td>1:20PM</td>
+                            </tr>
+                            <tr>
+                                <td>Melissa Aczon: INSERT TITLE HERE</td>
+                                <td>1:20PM</td>
                                 <td>2:00PM</td>
-                                <td>3:00PM</td>
                             </tr>
                             <tr>
-                                <td>Activity Four</td>
-                                <td>3:00PM</td>
+                                <td>Hongjing Lu: INSERT TITLE HERE</td>
+                                <td>2:00PM</td>
+                                <td>2:30PM</td>
+                            </tr>
+                            <tr>
+                                <td>Coffee Break</td>
+                                <td>2:30PM</td>
+                                <td>2:50PM</td>
+                            </tr>
+                            <tr>
+                                <td>Siddharth Pandiya: INSERT TITLE HERE</td>
+                                <td>2:50PM</td>
+                                <td>3:20PM</td>
+                            </tr>
+                            <tr>
+                                <td>Aaron Hui: INSERT TITLE HERE</td>
+                                <td>3:20PM</td>
+                                <td>3:50PM</td>
+                            </tr>
+                            <tr>
+                                <td>Closing Remarks</td>
+                                <td>3:50PM</td>
                                 <td>4:00PM</td>
                             </tr>
+                            <tr>
+                                <td>Networking</td>
+                                <td>4:00PM</td>
+                                <td>4:30PM</td>
+                            </tr>
+
 
                         </tbody>
                         
-                    </table>
-                    <br>
-                    <table class = "speaker-panelist-schedule">
-                        <col style="width:70%">
-                        <col style="width:15%">
-                        <col style="width:15%">
-                        <thead>
-                            <tr>
-                                <th>Panelist Networking Times</th>
-                                <th>Start-Time</th>
-                                <th>End-Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Activity One</td>
-                                <td>10:00AM</td>
-                                <td>10:30AM</td>
-                            </tr>
-                            <tr>
-                                <td>Activity Two</td>
-                                <td>12:00PM</td>
-                                <td>1:00PM</td>
-                            </tr>
-                            <tr>
-                                <td>Activity Three</td>
-                                <td>2:00PM</td>
-                                <td>3:00PM</td>
-                            </tr>
-                            <tr>
-                                <td>Activity Four</td>
-                                <td>3:00PM</td>
-                                <td>4:00PM</td>
-                            </tr>
-                        </tbody>
                     </table>
                 </section>
                 

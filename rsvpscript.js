@@ -16,7 +16,6 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
-
 $(document).ready(function () {
   $('#submit').click(function() {
 
@@ -32,7 +31,7 @@ $(document).ready(function () {
       alert("Please indicate where you heard about this event.");
       return false;
     }
-
+    
     db.collection("users").doc().set({
       name: $("#user-name").val(),
       email: $("#user-email").val(),
